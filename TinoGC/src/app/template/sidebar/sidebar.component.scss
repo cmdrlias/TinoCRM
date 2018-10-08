@@ -1,0 +1,51 @@
+@import "../../../var.scss";
+.sidebar {
+    background-color: $white;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    /*border-right: 2px solid $border-grey;*/
+    z-index: 0;
+    .profile-info {
+        padding: 6%;
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 200%;
+        }
+    }
+    .menu {
+        width: 100%;
+        .menu-title {
+            background-color: $light-grey;
+            margin: 0 15px;
+            .legend {
+                margin: 4%;
+            }
+        }
+        .menu-item {
+            width: 100%;
+            margin-top: 4%;
+            margin: 0 15px;
+            padding: 4%;
+            font-size: 14px;
+            color: $medium-grey;
+            border-left: 4px solid transparent !important;
+            img {
+                height: 20px;
+                width: auto;
+            }
+            b {
+                margin-left: 10%;
+            }
+        }
+        span {
+            float: right
+        }
+        .when-active {
+            fill: $purple;
+            color: $purple;
+            border-left: 4px solid $purple !important;
+        }
+    }
+}
