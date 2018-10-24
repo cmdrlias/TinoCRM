@@ -1,18 +1,31 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TemplateModule } from './template/template.module';
+import { ContentComponent } from './content/content.component';
+import { AbrirChamadoComponent } from './content/abrir-chamado/abrir-chamado.component';
+import { DadosEstatisticosComponent } from './content/dados-estatisticos/dados-estatisticos.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContentComponent,
+    AbrirChamadoComponent,
+    DadosEstatisticosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TemplateModule
+    TemplateModule,
+    RouterModule
+  ],
+  exports: [
+    ContentComponent,
+    AbrirChamadoComponent,
+    DadosEstatisticosComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

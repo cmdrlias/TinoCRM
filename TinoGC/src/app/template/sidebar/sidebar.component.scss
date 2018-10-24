@@ -4,6 +4,7 @@
     width: 20%;
     height: 100%;
     position: fixed;
+    top: 8%;
     /*border-right: 2px solid $border-grey;*/
     z-index: 0;
     .profile-info {
@@ -16,6 +17,11 @@
     }
     .menu {
         width: 100%;
+        .menu-item:hover {
+            fill: $purple;
+            color: $purple;
+            border-left: 4px solid $purple !important;
+        }
         .menu-title {
             background-color: $light-grey;
             margin: 0 15px;
@@ -25,6 +31,7 @@
         }
         .menu-item {
             width: 100%;
+            height: 50px;
             margin-top: 4%;
             margin: 0 15px;
             padding: 4%;
