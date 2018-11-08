@@ -1,6 +1,84 @@
-<div class="chamados1">
-    <app-chamado-card></app-chamado-card>
-</div>
-<div class="chamados2">
-    <app-chamado-card></app-chamado-card>
+<div class="container">
+    <div class="container-header">
+        <div class="row">
+            <div class="col-sm-5 float-left">
+                <h5>Chamados</h5>
+            </div>
+            <div class="col-sm-5 form-group">
+                <form>
+                    <input type="text" class="form-control" placeholder="Pesquise chamados, locais..."/>
+                </form>
+            </div>
+            <div class="col-sm">
+                <button type="button" class="btn btn-primary">Novo chamado</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-body">
+       <div class="row">
+           <div class="col-sm dash">
+               <div class="dash-desc">
+                   <div class="row">
+                       <div class="col-sm">
+                           <small class="strong">CHAMADOS DO SETOR</small>
+                       </div>
+                       <div class="col-sm-2 float-right" align="right">
+                           <p>25</p>
+                       </div>
+                   </div>
+               </div>
+               <div class="card-wrap">
+                    <app-chamado-card></app-chamado-card>
+               </div>
+               <div class="card-wrap">
+                    <app-chamado-card></app-chamado-card>
+               </div>
+               <div class="card-wrap">
+                    <app-chamado-card></app-chamado-card>
+               </div>
+               <div class="card-wrap more">
+                    <a href="" class="details">VER MAIS</a>
+               </div>
+           </div>
+           <div class="col-sm dash">
+                <div class="dash-desc">
+                    <div class="row">
+                        <div class="col-sm">
+                            <small class="strong">CHAMADOS DO SETOR</small>
+                        </div>
+                        <div class="col-sm-2 float-right" align="right">
+                            <p>25</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrap">
+                    <app-chamado-card></app-chamado-card>
+                </div>
+                <div class="card-wrap">
+                    <app-chamado-card></app-chamado-card>
+                </div>
+                <div class="card-wrap more">
+                    <a href="" class="details">VER MAIS</a>
+                </div>
+            </div>
+            <div class="col-sm dash">
+                <div class="dash-desc">
+                    <div class="row">
+                        <div class="col-sm">
+                            <small class="strong">CHAMADOS DO SETOR</small>
+                        </div>
+                        <div class="col-sm-2 float-right" align="right">
+                            <p>25</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrap">
+                    <app-chamado-card></app-chamado-card>
+                </div>
+                <div class="card-wrap more">
+                    <a href="" class="details">VER MAIS</a>
+                </div>
+           </div>
+       </div>
+    </div>
 </div>

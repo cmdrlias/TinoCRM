@@ -1,5 +1,47 @@
-.chamados1, .chamados2 {
-    float: left;
-    width: 50%;
-    padding: 0 2%;
+@import "../../../var.scss";
+
+.container {
+    margin-top: 7%;
+    min-width: 100% !important;
+    min-height: 100% !important;
+
+    .container-header {
+        margin: 0 0 1% 2%;
+        min-width: 100%;
+        h5 {
+            padding-top: 2%;
+        }
+
+        input {
+            box-shadow: 1px 3px 6px $light-grey;
+        }
+    }
+
+    .chamados1, .chamados2 {
+        float: left;
+        width: 50%;
+        margin-top: -6%;
+    }
+
+    .container-body {
+        border-top: 1px solid $border-grey;
+        .dash {
+            border-left: 1px solid $border-grey;
+            .dash-desc {
+                margin-top: 6%;
+                margin-right: 2%;
+            }
+            .card-wrap {
+                margin-top: 2%;
+            }
+
+            .more {
+                margin: 6% 0 6% 0;
+                padding: 2%;
+                width: 100%;
+                text-align: center;
+                border-top: 1px solid $border-grey
+            }
+        }
+    }
 }
