@@ -11,5 +11,4 @@ export class DadosEstatisticosComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
