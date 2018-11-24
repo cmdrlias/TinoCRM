@@ -7,30 +7,28 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TinoGC';
-<<<<<<< HEAD
-}
-=======
+
 	constructor() { }
 
 	ngOnInit() {
-		var chamados;
+		var locais = [] ;
 
 		let loc = [];
 		var xhttp = new XMLHttpRequest();
 
-		xhttp.open("GET", "https://3.16.104.196:27017/chamados", true);
+		xhttp.open("GET", "localhost:27017/locais", true);
 		xhttp.setRequestHeader('Content-type', 'application/json; charset=utf-8');
 
 		xhttp.onreadystatechange = function() {
 			if (this.readyState == 4 && this.status == 200) {
-				loc = JSON.parse(this.response);
+				locais = JSON.parse(this.response);
 				console.log(loc);
-				chamados = loc;
+				locais = loc;
 			}
 		};
 		xhttp.send();
 
-		console.log(chamados);
+		console.log(locais);
 	}
 }
->>>>>>> c679d27df9e1e930a73043ba7996a7be16e38173
+

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api_url:  'https://3.16.104.196',
+  api_url:  'localhost',
   api_port: '27017'
 
 };
