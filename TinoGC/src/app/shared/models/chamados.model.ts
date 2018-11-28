@@ -36,4 +36,8 @@ export class Chamado implements Deserializable {
         this.fotos = input.fotos.map((foto) => new Foto().deserialize(foto));
         return this;
     }
+
+    getProtocolo() {
+        return this.protocolo;
+    }
 }

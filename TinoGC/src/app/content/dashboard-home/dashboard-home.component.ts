@@ -1,3 +1,4 @@
+import * as $ from 'jquery';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,6 +10,8 @@ export class DashboardHomeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {  }
+  ngOnInit() { 
+
+  }
 
 }

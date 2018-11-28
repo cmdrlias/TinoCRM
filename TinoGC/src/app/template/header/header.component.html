@@ -1,36 +1,28 @@
-<header>
-  <div class="row">
-    <div class="col-sm-7">
-        <h1 class="title">TinoGC</h1>
-    </div>
-    <div class="menu">
-      <div class="col-sm-1 float-left">
-        <a routerLink="/" class="item active"><b>CHAMADOS</b></a>
-      </div>
-      <div class="col-sm-1 custom-item float-right">
-        <a routerLink="/dadosEstatisticos" class="item"><b>RELATORIOS</b></a>
-      </div>
-    </div>
-    <div class="col-sm">
-      <div class="user-profile">
-        <div class="row">
-          <div class="col-sm-4">
-              <img class="user-icon" src="../../../assets/images/gibby.png" />
-          </div>
-          <div class="col-sm">
-            <div class="row">
-              <div class="col-sm" align="left">
-                <p class="strong name">Gibby Icarly</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm function" align="left">
-                <small class="light">SUPORTE TÉCNICO</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+  <a class="navbar-brand title col-sm" href="#">TinoGC</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse w-100 col-sm flex-grow-0 navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav text-right">
+      <li class="nav-item mr-auto active">
+        <a class="nav-link active" routerLink="/">Chamados <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item mr-auto">
+        <a class="nav-link" routerLink="/dados-estatisticos">Relatórios</a>
+      </li>
+    </ul>
   </div>
-</header>
+  <div class="navbar-brand user-menu dropdown">
+    <a class="nav-link dropdown-toggle" type="button" href="#" id="dropUserMenu"
+    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <img src="../../../assets/images/gibby.png" width="50" height="50" class="user-icon" alt="">
+      <span>Gibby do iCarly</span>
+    </a>
+    <ul class="user-menu-dropdown navbar-nav">
+      <li class="user-item dropdown-item" href="#">Stats</li>
+      <li class="user-item dropdown-item" href="#">Departamento</li>
+      <li class="user-item dropdown-item" href="#">Sair</li>
+    </ul>
+  </div>
+</nav>

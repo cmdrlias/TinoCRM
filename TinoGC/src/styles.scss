@@ -1,8 +1,8 @@
 @import "var.scss";
 
 html {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     body {
         width: 100%;
         height: 100%;
@@ -28,7 +28,10 @@ html {
         color: $strong-grey;
     }
     a:hover {
-        color: $purple;
+        color: $purple !important;
+    }
+    .active {
+        color: $purple !important;
     }
     h5 {
         font-weight: 700
@@ -41,6 +44,17 @@ html {
         min-width: 160px;
         font-size: 12px;
         background-image: linear-gradient(to right, #51a291, #9662a4);
+        box-shadow: 1px 4px 6px $light-grey;
+    }
+
+    .btn-seconary {
+        color: #fff;
+        border: none;
+        border-radius: 40px;
+        min-height: 45px;
+        min-width: 160px;
+        font-size: 12px;
+        background-color: $medium-grey;
         box-shadow: 1px 4px 6px $light-grey;
     }
 

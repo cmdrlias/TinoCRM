@@ -10,6 +10,7 @@ import { AbrirChamadoComponent } from './content/abrir-chamado/abrir-chamado.com
 import { DadosEstatisticosComponent } from './content/dados-estatisticos/dados-estatisticos.component';
 import { DashboardHomeComponent } from './content/dashboard-home/dashboard-home.component';
 import { ChamadoCardComponent } from './content/chamado-card/chamado-card.component';
+import { DetalhesCardComponent } from './content/detalhes-card/detalhes-card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ChamadoCardComponent } from './content/chamado-card/chamado-card.compon
     AbrirChamadoComponent,
     DadosEstatisticosComponent,
     DashboardHomeComponent,
-    ChamadoCardComponent
+    ChamadoCardComponent,
+    DetalhesCardComponent
   ],
   imports: [
     BrowserModule,
